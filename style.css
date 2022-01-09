@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root{
+    --Roxo: #72005F;
+    --Bege: #BAA193;
+}
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+/*--------------------------------*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left, .right{
+    width: 50%;
+    margin: auto;
+}
+#home .left  span{
+    color: var(--Bege);
+    font-size: 40px;
+    font-weight: 700;
+}
+#home .left h1{
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--Roxo);
+    margin: 0;
+    padding-bottom: 2rem;
+}
+#home .left button{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: .8rem;
+    background-color: #72005F;
+    color: #fff;
+    font: normal normal 700 20px/30px Roboto;
+    width: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+#home .left button:hover,
+#home .left button:focus{
+    filter: brightness(1.2);
+}
+
+#home .right img{
+    width: 87%;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translatey(0);
+    }
+    50%{
+        transform: translatey(-41px);
+    }
+    
+}
