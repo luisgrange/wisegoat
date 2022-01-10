@@ -73,3 +73,22 @@ body{
     }
     
 }
+/*Quote page*/
+#quotes.hidden, #home.hidden{
+    display: none;
+}
+.site-title{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.quote-box{
+    background-color: var(--Bege);
+    width: 70%;
+    height: 100%;
+}
+.quote-box p{
+    color: #72005F;
+    font: normal normal 700 26px/32px Roboto;
+}
